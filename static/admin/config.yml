@@ -4,13 +4,14 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
     create: true
-    slug: 'index'
+    slug: '{{year}}-{{month}}-{{day}}'
     media_folder: ''
     public_folder: ''
     path: '{{title}}/index'
