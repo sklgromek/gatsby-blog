@@ -29,7 +29,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}'
     media_folder: ''
     public_folder: ''
-    path: 'articles/'
+    path: '/articles/'
     editor:
       preview: false
     fields:
