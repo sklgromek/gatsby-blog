@@ -14,7 +14,22 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}'
     media_folder: ''
     public_folder: ''
-#    path: '{{title}}/index'
+    path: '{{title}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'articles'
+    label: 'Articles'
+    folder: 'content/articles'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}'
+    media_folder: ''
+    public_folder: ''
+    path: 'articles/'
     editor:
       preview: false
     fields:
